@@ -1,0 +1,308 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta />*/
+
+/* BODY */
+
+body
+{
+	color: #ffffff;
+	background-color: #000000;
+	font-family: Consolas;
+	font-size: 14pt;
+}
+
+/* HEADINGS */
+
+h1
+{
+	margin-left: 1em;
+	color: gainsboro;
+	font-weight: bold;
+	font-size: 24.0pt;
+	font-family: 'Lucida Console';
+}
+
+h2
+{
+	margin-left: 1em;
+	color: gainsboro;
+	font-weight: bold;
+	font-size: 20pt;
+	font-family: 'Lucida Console';
+}
+
+h3
+{
+	margin-left: 1em;
+	color: gainsboro;
+	font-weight: bold;
+	font-size: 15pt;
+	font-family: 'Lucida Console';
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+/* PARAGRAPHS */
+
+p
+{
+	margin-top: 0pt;
+	color: #ffffff;
+	padding-bottom: 10;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+
+p.see-also
+{
+	margin-left: 15em;
+	margin-right: 15em;
+	margin-top: 3em;
+	color: #dcdcdc;
+	font-style: italic;
+	background-color: #0E0E0E;
+	background-position: 15px 15px;
+	background-repeat: no-repeat;
+	border-left: solid 5px #7557a8;
+	border-radius: 6px;
+	overflow: hidden;
+	padding: 15px 60px;
+	background-image: url('../Images/icon_seealso.png');
+	mc-auto-number-format: '{b}See also: {/b}';
+}
+
+p.see-also-inline
+{
+	margin-left: 5em;
+	margin-right: 5em;
+	color: #dcdcdc;
+	font-style: italic;
+	background-color: #0E0E0E;
+	background-position: 15px 15px;
+	background-repeat: no-repeat;
+	border-left: solid 5px #7557a8;
+	border-radius: 6px;
+	overflow: hidden;
+	padding: 15px 60px;
+	background-image: url('../Images/icon_seealso.png');
+	mc-auto-number-format: '{b}See also: {/b}';
+}
+
+p.tip
+{
+	margin-left: 7em;
+	margin-right: 7em;
+	color: #dcdcdc;
+	background-color: #0e0e0e;
+	background-position: 15px 15px;
+	background-repeat: no-repeat;
+	border: solid 5px #1d1d1d;
+	border-radius: 6px;
+	overflow: hidden;
+	padding: 15px 60px;
+	background-image: url('../Images/icon_note.png');
+	mc-auto-number-format: '{b}Note: {/b}';
+}
+
+p.caption
+{
+	font-size: 12.0pt;
+	margin-top: 0pt;
+	color: #ffffff;
+	padding-bottom: 10;
+	margin-bottom: 15px;
+	text-align: center;
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* IMAGES */
+
+img
+{
+	border: none;
+	max-width: 100%;
+}
+
+img.border
+{
+	border-left-style: solid;
+	border-left-width: 5px;
+	border-left-color: #1d1d1d;
+	border-right-style: solid;
+	border-right-width: 5px;
+	border-right-color: #1d1d1d;
+	border-top-style: solid;
+	border-top-width: 5px;
+	border-top-color: #1d1d1d;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #1d1d1d;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+img.thumbnail
+{
+	mc-thumbnail: popup;
+	border: solid 3px 7557a8;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+img.glyph
+{
+	mc-float: frame-center;
+	border: 10px;
+}
+
+/* LISTS */
+
+li
+{
+	margin-bottom: 10px;
+	margin-top: 6px;
+}
+
+ul
+{
+	margin-bottom: 6pt;
+	margin-top: 6pt;
+}
+
+ol
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+ol > li::marker
+{
+	content: counter(list-item) '.';
+	font-weight: bold;
+	colour: grey;
+}
+
+dl
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* LINKS */
+
+a
+{
+	color: #7557a8;
+}
+
+a.Popup
+{
+	color: #7557a8;
+}
+
+a:visited
+{
+	text-decoration: underline;
+	color: #523d76;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+/* TABLES */
+
+table
+{
+	margin-bottom: 10;
+}
+
+/* MADCAP */
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #d3d3d3;
+	font-family: 'Consolas';
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+	color: #2f7a97;
+}
+
+MadCap|xref
+{
+	color: #7557a8;
+}
+
+MadCap|xref.URL
+{
+	mc-format: ;
+	color: #7557a8;
+}
+
+/* ? */
+
+th
+{
+	font-size: 12pt;
+}
+
+p.formula
+{
+	margin-top: 0pt;
+	color: #ffffff;
+	margin-bottom: 10px;
+	margin-left: 0;
+	text-align: center;
+	font-family: 'Courier New';
+	font-variant: normal;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-left-style: dashed;
+	border-left-width: 1px;
+	border-right-style: dashed;
+	border-right-width: 1px;
+	border-top-style: dashed;
+	border-top-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	padding-bottom: 0px;
+}

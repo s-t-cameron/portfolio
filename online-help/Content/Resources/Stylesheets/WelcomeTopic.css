@@ -1,0 +1,113 @@
+/*<meta />*/
+
+.nav-search
+{
+	display: none;
+}
+
+body
+{
+	font-size: 14pt;
+}
+
+img
+{
+	border: none;
+}
+
+div.ThreeColumnDisplay	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div.ThreeColumnDisplay::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.ThreeColumnDisplay::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.ThreeColumnDisplay > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.ThreeColumnDisplay > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.ThreeColumnDisplay > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+	border-left: solid 3px #2e2e2e;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-right: solid 3px #2e2e2e;
+}
+
+div.ThreeColumnDisplay > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+@media only screen and (max-width: 1279px)
+{
+	div.ThreeColumnDisplay > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.ThreeColumnDisplay > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.ThreeColumnDisplay > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	div.ThreeColumnDisplay > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.ThreeColumnDisplay > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		border-left: none 0px transparent;
+		border-right: solid 0px #000000;
+		border-top: solid 3px #2e2e2e;
+		border-bottom: solid 3px #2e2e2e;
+	}
+
+	div.ThreeColumnDisplay > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+
