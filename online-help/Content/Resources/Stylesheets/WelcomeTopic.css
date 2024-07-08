@@ -46,6 +46,7 @@ div.ThreeColumnDisplay > div
 div.ThreeColumnDisplay > div:nth-child(1)
 {
 	width: 33.33333%;
+	padding-right: 10px;
 	margin-left: 0%;
 }
 
@@ -62,6 +63,7 @@ div.ThreeColumnDisplay > div:nth-child(2)
 div.ThreeColumnDisplay > div:nth-child(3)
 {
 	width: 33.33333%;
+	padding-left: 10px;
 	margin-left: 0%;
 }
 

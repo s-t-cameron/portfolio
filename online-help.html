@@ -19,16 +19,91 @@ $(function(){
 </head>
 
 <body>
+        <!-- BUTTON SCRIPT -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        <script>
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+            <!-- END OF BUTTON SCRIPT -->
+        
+            <!-- PAGE CONTENT BEGINS -->
     <h1>Online Help</h1>
     <h2>Project Summary</h2>
-    <p>This documentation was created as a term project for COMM 1260: Design & Write Online Help, taken as part of the Technical Writing Certificate at the British Columbia Institute of Technology.</p>
-    <p>The goal of the project was to use MadCap Flare to create a functioning help system with five fully-written, search engine optimized topics, supported by 15 "blank" topics and an organized table of contents.</p>
+    <p>This documentation was created as a term project for COMM 1260: Design & Write Online Help, taken as part of the Technical Writing Certificate at the British Columbia Institute of Technology. The goal of the project was to use MadCap Flare to create a functioning help system with five fully-written, search engine optimized topics, supported by 15 "blank" topics and an organized table of contents.</p>
+
+    <h3>Documentation</h3>
+    <h4><a href="/portfolio/online-help/Content/Welcome.htm">The Welcome Page</a></h4>
+    <div class="row">
+        <div class="column leftsmall">
+            screenshots of the page aaaa
+        </div>
+
+        <div class="column rightsmall">
+            <p>The marketing of Ingress often blurs the line between reality and fiction, building intrigue around the lore. To stay consistent with the brand, the first impression of the site is partially "in-universe": it plays into the plot of the game while still delivering enough information to be helpful.</p>
+
+            <p>For further consistency, I established a colour pallette based on the app itself.</p>
+            <img class="center" src="images/onlinehelp_pallette.png" alt="A web application selecting colours from a screenshot of the game Ingress">
+        </div>
+      </div> 
+
+      <h4><a href="/portfolio/online-help/Content/Glyph-Hacking.htm">Glyph Hacking</a></h4>
+      <div class="row">
+          <div class="column leftsmall">
+              screenshots of the page aaaa
+          </div>
+  
+          <div class="column rightsmall">
+              <p>being good at writing instructions wow!</p>
+          </div>
+        </div> 
+
+        <h4><a href="/portfolio/online-help/Content/Links.htm">Links</a></h4>
+        <div class="row">
+            <div class="column leftsmall">
+                screenshots of the page aaaa
+            </div>
     
-    <h3><a href="/portfolio/online-help/Content/Welcome.htm">Final Documentation</a></h3>
-    <a href="/portfolio/online-help/Content/Glyph-Hacking.htm">Glyph Hacking</a>
-    <a href="/portfolio/online-help/Content/Glyph-Hacking.htm">Links</a>
-    <a href="/portfolio/online-help/Content/Medal-Types.htm">Types of Medals</a>
-    <a href="/portfolio/online-help/Content/Portal-Level.htm">Portal Level</a>
+            <div class="column rightsmall">
+                <p>being good at writing instructions wow!</p>
+            </div>
+          </div>
+
+          <h4><a href="/portfolio/online-help/Content/Portal-Level.htm">Portal Level</a></h4>
+          <div class="row">
+              <div class="column leftsmall">
+                  screenshots of the page aaaa
+              </div>
+      
+              <div class="column rightsmall">
+                  <p>being good at writing instructions wow!</p>
+              </div>
+            </div> 
+ 
+            <h4><a href="/portfolio/online-help/Content/Medal-Types.htm">Types of Medals</a></h4>
+            <div class="row">
+                <div class="column leftsmall">
+                    screenshots of the page aaaa
+                </div>
+        
+                <div class="column rightsmall">
+                    <p>being good at writing instructions wow!</p>
+                </div>
+              </div> 
     
 </body>
 <footer><div id="footer"></div></footer>
