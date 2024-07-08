@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Satah Cameron: Portfolio: Reference and Training Materials: User Analysis</title>
+    <link rel="stylesheet" href="../main.css"/>
+
+<!-- ADDING PARAGRAPH INDENTS TO THE WHOLE PAGE BECAUSE IT'S A REPORT -->
+    <style>
+    p {  text-indent:1.5em; }
+    </style>
+
+<!-- FOOTER SCRIPT -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+       crossorigin="anonymous">
+    </script>
+    <script> 
+      $(function(){
+       $("#footer").load("../footer.html"); 
+       });
+    </script>
+<!-- END OF FOOTER SCRIPT -->
+</head>
+
+<body>
+    <!-- BUTTON SCRIPT -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    <!-- END OF BUTTON SCRIPT -->
+
+    <!-- PAGE CONTENT BEGINS -->
+    <h1 id="top">Reference and Training Materials: User Analysis</h1>
+    <p class="note">This document was originally designed as a .PDF report in the creation of the <a href="..\reference-and-training-materials.html">Automation For Single Tab Character Keepers In Google Sheets documentation</a>.</p>
+<h4>Table of Contents</h4>
+    <ol style="margin-top:0em;">
+        <li><a href="#user-analysis">User Analysis</a></li>
+        <ol type="a">
+            <li><a href="#technical-background">Technical Background</a></li>
+            <li><a href="#digital-play-aid-experiences">Digital Play Aid Experiences</a></li>
+        </ol>
+        <li><a href="#user-profiles">User Profiles</a></li>
+        <li><a href="#user-stories">User Stories and Use Case Scenarios</a></li>
+        <li><a href="#documentation-rationale">Documentation Rationale</a></li>
+        <ol type="a">
+            <li><a href="#interview-analysis">Interview Analysis</a></li>
+            <li><a href="#documentation-rationale">Documentation Rationale</a></li>
+        </ol>
+    </ol>
+
+    <h2 id="user-analysis">User Analysis</h2>
+    <p>I interviewed five avid online TTRPG players. Four were also game designers, ranging from casual hobbyist to working professional. Two of them frequently use digital play aids as part of their job, for live streams or podcast recordings.The interviews ranged from 15 to 30 minutes and had two discrete sections: the interviewee's technical background and their thoughts on digital play aids.</p>
+
+    <h3 id="technical-background">Technical Background</h3>
+<p>Interviewees were asked:</p>
+<ul>
+    <li>What software they use frequently (in all areas of their life, not just in relation to TTRPGs)</li>
+    <ul>
+        <li>What their process for learning that software was</li>
+        <li>What resources they reach for when they have problems or questions</li>
+    </ul>
+    <li>Whether they have any coding or programming experience</li>
+    <ul>
+        <li>If yes, what their learning process and preferred methods of
+            troubleshooting are</li>
+        <li> If no, whether they felt there were specific barriers that they faced in accessing that knowledge</li>
+    </ul>
+</ul>
+<h4>Software Experience</h4>
+<p>Alongside social media and web browsers, the interviewees named a number of specialty softwares they they used in their professional and personal life. This chart groups the individual programs into common categories.</p>
+<img src="..\images\ref_report_chart1.png" class="center">
+<h4 id="coding-experience">Coding Experience</h4>
+<p>The interviewees can be grouped into three levels of coding and similar technical experience: novice, intermediate, and advanced.</p>
+<p>The <em>novice</em> interviewees all described themselves as having "no" coding experience, but went on to share experiences of doing some amount of basic coding in web or game design. While they could implement code that they find and make small alterations to customise it, they didn't feel confident in understanding why something works or doesn't.</p>
+<p>The <em>intermediate</em> interviewee had enough base knowledge to easily follow tutorials to do more advanced work. He felt confident in his ability to figure out why something might not be working and find an answer to it, even if he couldn't fix it himself.</p>
+<p> The <em>advanced</em> interviewee was a former professional programmer and web developer. She could confidently teach others how to work with code in multiple languages and only rarely needs to look things up during troubleshooting.</p>
+<img src="..\images\ref_report_chart2.png" class="center">
+<p>The most common barrier to access was a lack of interest or motivation, with a lack of time close behind. The majority of interviewees expressed that they think they'd be able to figure out how to learn it if they had to, even if it might be difficult or they're not sure where they'd start.</p>
+<h4>Learning Process and Resources</h4>
+<p>Every interviewee expressed that they prefer to learn through experience and in the
+    context of a specific project. The majority of them said that they prefer to just start using software, then look up the answers to questions as they come up. For answers to those questions, most of them said the first thing they do is look for video content on YouTube, and if they can't find anything there, they search for forums or ask the question on social media.</p>
+<img src="..\images\ref_report_chart3.png" class="center">
+<p>Of the two who had the opposite priority (expressed that they'd look for forums or use
+    crowdsourcing first, then look for video content if they still don't have an answer), both said that videos are "a last resort" because of how much time they take to get through, and one also specified that videos are usually not helpful or specific enough.</p>
+    <p>For further analysis of the interviewees' learning process and preferred resoruces, see the Documentation Rationale.</p>
+<h3 id="digital-play-aid-experiences">Digital Play Aid Experiences</h3>
+<p>Interviewees were asked:</p>
+<ul>
+    <li>What they look for in an effective digital character sheet</li>
+    <li>Whether they've ever used a character sheet made in Google Sheets</li>
+    <ul>
+        <li>If yes, what worked well about it and what didn't</li>
+    </ul>
+    <li>Whether they've ever made a character sheet in Google Sheets</li>
+    <ul>
+        <li>If yes, whether there were any limitations they felt they came up against while trying to learn and use it</li>
+    </ul>
+</ul>
+<h4>Analysis</h4>
+<h5>Effective Digital Character Sheets</h5>
+<p>The answers for what makes an effective digital character sheet fell into three categories: automation, collaboration, and organisation. Every point here was mentioned by at least two people, without specific prompting.</p>
+<ul>
+    <li>Automation</li>
+        <ul>
+           <li>The sheet "does the math" and replaces as many manual calculations as possible</li>
+            <li>When you make a change, related information is updated</li>
+            <li>All relevant game content is included in the sheet and you don't have to copy and paste anything in</li>
+            <li>Economy of action (not having to click multiple buttons to do one thing)</li>
+        </ul>
+    <li>Collaboration</li>
+        <ul>
+            <li>The ability to see other people's changes in real time</li>
+            <li>Not having to manually upload and send files</li>
+            <li>Easy to customise to suit the specific needs of your game</li>
+        </ul>
+    <li>Organisation</li>
+    <ul>
+        <li>It looks nice, but more importantly, it looks clean</li>
+            <ul>
+                <li>Function is more important than form</li>
+                <li>The design provides clarity and doesn't overwhelm the data</li>
+        </ul>
+        <li>You aren't given too much information at once, but it's made clear where to find further information</li>
+        <li>Content is put on the sheet or in tabs in the same order that it comes up in play, with minimal need to jump around between sections</li>
+    </ul>
+</ul>
+<h5>Google Sheets Character Sheets</h5>
+<p>Every interviewee had numerous experiences using character sheets made in Google Sheets. Two had made at least one from scratch, and all had experience in altering sheets that others have made.</p>
+<img src="..\images\ref_report_chart4.png" class="center">
+<p>Of the two interviewees who had made character sheets in Google Sheets from scratch, one described their work as "very simple", while the other was able to create complex interactive sheets.</p>
+    <p>The three interviewees who had only edited pre-existing sheets had a range of experiences. One occasionally added to or changed a pre-made sheet's data but never touched a formula, one enjoyed "sprucing up" sheets by adding simple automation and formatting, and one had extensive ability to maintain and alter sheets but wanted to avoid the initial labour of set-up.</p>
+    <p>All of the interviewees had very positive experiences with Google Sheets character sheets' ability to provide the features of automation, collaboration, and organisation that they named as important in a digital play aid. The most common criticism was that the mobile experience of Google Sheets is inadequate compared to the desktop experience.</p>
+    <p>Beyond the mobile app, the limitations that the interviewees named were generally divided down the line of how much coding experience they had. Novice coders talked about limited aesthetic features and opaque functional features, expressing difficulty understanding how to make different parts of the sheet "talk" to each other. The intermediate and advanced coders expressed that they were occasionally frustrated by the inherent limitations of trying to make a spreadsheet into an application in comparison to the open field of building an application from scratch.</p>
+
+    <h2 id="user-profiles">User Profiles</h2>
+<p>Each user profile is based largely on one specific interviewee, but includes details from other interviewees whose answers had significant crossover.</p>
+<h3>User 1: The Enthusiast</h3>
+<p>The enthusiast is a professional visual artist and an amateur game designer. They have advanced expertise in a range of drawing and publishing software and some very basic technical experience. They can copy and paste CSS to change the font style and colour on their website, but if it doesn't work, they don't know how to fix it on their own. They find the detail-oriented nature of programming very frustrating and get annoyed when it turns out something as small as a missing bracket or comma is the cause of their problems.</p>
+<p>When it comes to learning how to make character sheets in Google Sheets, their primary motivation is interest and their primary barrier is function. They want to make something that makes their games accessible to a bigger audience, but they don't know how.</p>
+<p>They've altered pre-existing sheets to fit their purposes, but it didn't give them the base skills to keep building on when they go out on their own. They're not sure where to look next when they want to make something and they don't have the confidence to get started. They need to be taught the basics alongside simple and concrete information on why things work the way that they do, without introducing intimidation by getting theoretical or overly-technical. When they have the basics down, they need to be able to find quick and comprehensive information on new features that they're intrigued by.</p>
+<h3>User 2: The Content Creator</h3>
+<p>The content creator is a TTRPG podcaster and streamer. They have advanced expertise in video and audio production software and basic understanding of fundamental aspects of coding. If something goes wrong when they're working on the backend of their website, they're able to isolate the problem well enough to do a web search for a solution, but generally try to keep things simple so they don't get in over their head.</p>
+<p>When it comes to learning how to make character sheets in Google Sheets, their primary motivation is function and their primary barrier is material. They want to make something that works, but they don't have a lot of time to spend on it.</p>
+<p>They've made simple sheets, but know that they could increase the efficiency and minimise the mental load required during streams or recording sessions by adding automation. The frequent release schedule of their content means they don't have several hours to spend every month designing something for their next featured game. They need a wide array of basic tools and tips and tricks, but don't need a lot of depth on any particular feature.</p>
+<h3>User 3: The Transfer</h3>    
+<p>The transfer is a former programmer and current professional game designer. She has advanced expertise in several coding languages and a basic understanding of publishing and design software. She can make video games from scratch, but frequently needs to look up basic functions of a program while working on layout for her games.</p>
+<p>When it comes to learning how to make character sheets in Google Sheets, her primary motivation is material and her primary barrier is interest. She wants to create something that's cheap and easy to share, but just isn't aware that this is an option.</p>
+<p>Because of her technical background, she doesn't need a lot of instruction– she just needs to be shown what's possible and what the limitations are. She needs to be given a basic idea of how to work within the confines of the program and the ability to quickly find tips and tricks for the most efficient way to make something happen.</p>
+<h2 id="user-stories">User Stories and Use Case Scenarios</h2>
+<p>Because this documentation focuses on creating a product primarily for use by other people, the user stories focus on the person using the character sheet and the use case scenarios focus on the person creating the character sheet. Each could be easily translated to "As a designer, I want to make a character sheet that… so that the player can…"</p>
+<table class="report"><thead>
+    <tr>
+      <th>Player User Stories</th>
+      <th>Creator Use Case Scenarios</th>
+    </tr></thead>
+  <tbody>
+    <tr>
+      <td>As a player, I want <em>a character sheet that does the math for me</em> so I can <em>focus on gameplay</em>.</td>
+      <td><ul>
+        <li>How to automatically calculate stats based on selected traits</li>
+      </ul></td>
+    </tr>
+    <tr>
+      <td>As a player, I want <em>a character sheet that automatically fills in content</em> so I can <em>save time and effort on copying and pasting from disparate formats</em>.</td>
+      <td>
+        <ul>
+            <li>How to add a description of an item that a player adds to their inventory</li>
+            <li>How to organise data so that it's easy to reference when building formulas</li>
+        </ul></td>
+    </tr>
+    <tr>
+      <td>As a player, I want <em>a character sheet that reacts to input by changing any relevant parts of the sheet</em> so I can <em>be sure the information I'm working with is up-to-date</em>.</td>
+      <td>
+        <ul>
+            <li>How to reference a specific cell in other cells</li>
+            <li>How to name spreadsheet cells for easy reference</li>
+        </ul></td>
+    </tr>
+    <tr>
+      <td>As a player, I want <em>a character sheet that is organised for the flow of play</em> so I can <em>avoid skipping around while playing</em>.<br>
+        <br>
+        As a player, I want <em>a character sheet that only displays the information I need</em> so I can <em>avoid spending time sifting through text to find what I'm looking for</em>.</td>
+      <td>
+        <ul>
+            <li>How to organise data into different tabs</li>
+            <li>How to reference data from other tabs</li>
+            <li>How to add hover text</li>
+        </ul>
+    </td>
+    </tr>
+    <tr>
+      <td>As a player, I want <em>a character sheet that serves as an on-going play aid</em> so I can <em>minimise the number of documents I need to juggle</em>.</td>
+      <td>
+        <ul>
+            <li>How to change what a move looks like after it's been used</li>
+        </ul></td>
+    </tr>
+  </tbody></table>
+<h2 id="documentation-rationale">Documentation Rationale</h2>
+<h3 id="interview-analysis">Interview Analysis</h3>
+<p>The majority of interviewees expressed that they prefer to learn through experience, in the context of a project, and in video format.</p>
+<h4>Experience-Based Learning</h4>
+<p>When asked about their learning process, the majority of interviewees expressed that they prefer to learn new software by just starting to use it, then looking up any questions they have as they come up. While the experiences the interviewees shared on further prompting confirm this, the stories also made it very clear that they were only able to do this because of a combination of two things: existing knowledge base in similar software, and working in software that has obvious cause-and-effect.</p>
+<p>This is a barrier because the reference points that could be helpful for knowledge transfer into Google Sheets are fairly specialised. Every interviewee who had created a character sheet in Google Sheets got started by customising or altering a sheet that someone else had built. It isn't always immediately clear why something is or isn't working; it's much closer to programming than it is to– for example– troubleshooting misalignment in publishing software, or learning a new technique to fade between clips in a video editing program.</p>
+<h4>Project-Based Learning</h3>
+<p>When speaking about learning new software, it was extremely clear that every interviewee needed to ground their knowledge in the context of actually making something. Many of them expressed that they specifically seek answers from users who use software in a similar context to them, because it offers that same grounding effect. Official documentation, and even other users with different use contexts, often miss the point of the questions they're asking or the task they're trying to complete.</p>
+<p>The majority of them expressed sentiments of being "hands-on" learners. Even those who preferred to get started by taking instruction expressed that they wanted that instruction to be based in a strictly relevant context, teaching them a specific and necessary skill that they could immediately apply to a project.</p>
+<h4>Video-Based Learning</h4>
+<p>The majority of interviewees preferred to learn and troubleshoot through videos that show someone else going through the exact process that they'll need to do.</p>
+<p>The interviewees who had a strong preference against videos criticised their length and the quality and relevance of the information. These concerns can be managed in production by writing a clean, clearly targeted script.</p>
+<h3 id="materials-design">Materials Design</h3>
+<p>For this document, user data and practical concerns align on primarily using a video format. Video is the most appropriate method of documenting a Sheets workflow. Many tasks involve the frequent switching of tabs and accessing multiple parts of the program at once, which is easiest to follow in motion, rather than through text and still images. However, it also involves the use of a lot of formulas. Typing them out from a screen can be very frustrating and also introduces a larger margin of error from typos.</p>
+<p>To balance these factors, effective documentation can't be purely video. My proposal is the creation of one large project-based tutorial video, walking the user through creating something that addresses the basic knowledge building blocks, and several much shorter follow-up videos that address specific tasks/skills. The tutorial video will be presented alongside copies of the documents being used in the tutorial itself so that the user can choose to follow along and experience for themselves how the end product comes together. Every follow-up video will be presented alongside a "cheat sheet" that allows the user to copy formulas.</p>
+</body>
+<footer><div id="footer"></div></footer>
+</html>

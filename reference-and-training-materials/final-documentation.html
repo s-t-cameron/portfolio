@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Satah Cameron: Portfolio: Reference and Training Materials: Final Documentation</title>
+    <link rel="stylesheet" href="../main.css"/>
+
+<!-- FOOTER SCRIPT -->
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+ crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+ $("#footer").load("../footer.html"); 
+ });
+</script>
+<!-- END OF FOOTER SCRIPT -->
+</head>
+
+<body>
+    <!-- BUTTON SCRIPT -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    <!-- END OF BUTTON SCRIPT -->
+
+<h1>Reference and Training Materials</h1>
+<p class="note">This documentation was created as <a href="..\reference-and-training-materials.html">a term project</a> for COMM 2206: Writing for the Computer Industry, taken as part of the Technical Writing Certificate at the British Columbia Institute of Technology.</p>
+<h2>Final Documentation</h2>
+<p>As explained in the <a href="../reference-and-training-materials/user-analysis.html#documentation-rationale">documentation rationale synthesised from my user research</a>, the intended audience prefers video content and learns best through hands-on experience. To meet both of those needs, I created a video tutorial that walks the user through the creation of a project, explaining every step along the way to ensure full understanding. The final documentation, entitled "Automation For Single Tab Character Keepers In Google Sheets", consists of four parts:</p>
+<ol>
+    <li><a href="#video">A video tutorial</a></li>
+    <li><a href="#cheat-sheet">A cheat sheet</a></li>
+    <li><a href="#game-rules">A one page TTRPG</a></li>
+    <li><a href="#website">A website</a></li>
+    </ol>
+    </ol>
+<h3 id="video">The Video</h3>
+<p>My focus in this material is teaching basic, fundamental tools in a way that gives genuine understanding, forming skill building blocks that can be called on for the user's future projects. The video embedded below showcases an example section from 8:27 to 9:42.</p>
+<div class="frame">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/l20AnrnBYW4?si=aC2iAn3Om9AfDZYe&amp;start=507&end=582" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p></p>
+<p>This is the corresponding section of the accompanying "cheat sheet":</p>
+<img src="../Images/ref_final_cheatsheet_video.png" class="centersquare">
+<p>User research also showed that the intended audience is largely at a <a href="../reference-and-training-materials/user-analysis.html#coding-experience">novice level when it comes to coding</a>. While building automation in a spreadsheet isn't as complicated as programming software from scratch, it requires some similar technical skills. To help keep the audience engaged with material they may otherwise find intimidating, the tone of the video is humorous and positive, while still maintaining a high standard of instruction and explanation.</p>
+
+<h3 id="cheat-sheet">The Cheat Sheet</h3>
+<p>This <a href="https://docs.google.com/document/d/1M8iI_UJX6kSnXaHyrjvtmH8rXzZGfo1-mY7rScV2HhM/edit?usp=sharing">20 page Google Doc</a> includes written instructions, formulas that can be copied to avoid the frustration of typing everything off of a screen, and in-depth explanations of how each formula used in the automation process works.</p>
+<img src="../images/ref_final_cheatsheet1.png" class="center">
+<img src="../images/ref_final_cheatsheet2.png" class="center">
+<img src="../images/ref_final_cheatsheet3.png" class="center">
+
+<h3 id="game-rules">The Game Rules</h3>
+    <p>This project is focused on building a digital play aid for a tabletop roleplaying game. At the beginning of the video, the user is directed to a website where they can download the rules of the game to use as a reference as they build the project alongside the instructor. This game was created specifically for the tutorial in order to showcase as many basic functions of automation as possible. Creating something that met that goal while being recognisable as a game so that the functions could be presented in the correct context for the audience was an incredible exercise in purpose and brevity.</p>
+    <a target="_blank" href="../images/ref_final_game.png">
+        <img id="myImg" src="../images/ref_final_game.png" class="thumbnail">
+    </a>
+
+<h3 id="website">The Website</h3>
+<p>Using Carrd, I created a simple interactive mock-up of the site that could host these materials.</p>
+<img src="../images/ref_final_website.png" class="center">
+<p>The website also linked to <a href="https://docs.google.com/spreadsheets/d/17GJAEmfwZybNgGxI0zFGnb8mbu8kAaBrZZ4nc6uogxk/edit?usp=sharing">the final product created in the tutorial</a> for experimentation and direct comparison.</p>
+
+</body>
+<footer><div id="footer"></div></footer>
+</html>
