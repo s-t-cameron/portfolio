@@ -4,7 +4,7 @@
     <title>Satah Cameron: Portfolio: Reference and Training Materials</title>
     <link rel="stylesheet" href="main.css"/>
 
-    <!-- FOOTER SCRIPT -->
+       <!-- NAV SCRIPT -->
 <script
 src="https://code.jquery.com/jquery-3.3.1.js"
 integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -12,23 +12,117 @@ integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 </script>
 <script> 
 $(function(){
- $("#footer").load("/footer.html"); 
+ $("#footer").load("/footer.html");
+ $("#topnav").load("/header.html"); 
  });
 </script>
-<!-- END OF FOOTER SCRIPT -->
+<!-- END OF NAV SCRIPT -->
 </head>
-
+<header><div id="topnav"></div></header>
 <body>
-    <h1>Reference and Training Materials</h1>
-    <h2>Project Summary</h2>
-    <p>This documentation was created as a term project for COMM 2206: Writing for the Computer Industry, taken as part of the Technical Writing Certificate at the British Columbia Institute of Technology.</p>
-    <p>The goal of the project was to create documentation that would teach indie tabletop roleplaying game (TTRPG) designers how to create digital play aids in Google Sheets. Specifically, I set out to create a video and accompanying content that guides the user through the creation of a character keeper with basic and intermediate automation. The tutorial covers a wide range of basic tools and thoroughly explains their functions so that they can easily be applied to other purposes.
-    
-    <h3><a href="/portfolio/reference-and-training-materials/final-documentation.html">Final Documentation</a></h3>
-    <p>The final documentation is a 40 minute long video tutorial for creating an automated character keeper in Google Sheets. Each step, function, and formula is thoroughly explained so that the user fully understands what they're doing and why, forming highly adaptable building blocks of knowledge and skill.</p>
+        <!-- BUTTON SCRIPT -->
+        <button onclick="topFunction()" id="topBtn" title="Go to the top of the page">☖ TOP ☖</button>
+        <script>
+        let mybutton = document.getElementById("topBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+            <!-- END OF BUTTON SCRIPT -->
+
+ <h1>Reference and Training Materials</h1>
+      <p class="note">This documentation was created as a term project for COMM 2206: Writing for the Computer Industry, taken as part of the Technical Writing Certificate at the British Columbia Institute of Technology. The goal of the project was to create documentation that would teach users how to use a specific software for a specific application in their work. My focus was teaching independent tabletop roleplaying game (TTRPG) designers how to use spreadsheet automation to create digital play aids in Google Sheets.</p>
+      <p><ol>
+        <li><a href="#report">User Analysis Report</a></li>
+        <li><a href="#documentation">Final Documentation</a></li>
+      </ol></p>
+
+      <h2 id="report"><a href="/portfolio/reference-and-training-materials/user-analysis.html">Report: User Analysis</a></h2>
+      <div class="row">
+        <div class="column left"><img class="border" src="images/ref_report1.png">
+          <img class="border" src="images/ref_report2.png"></div>
+        <div class="column right"><p>In the process of creating this documentation, I conducted a series of one-on-one interviews with members of the targeted community to get a sense of their needs. My findings are presented in this 2500 report, including three unique user profiles and a documentation rationale, demonstrating my ability to cater content to specific audiences and synthesise qualitative user research.</p></div>
+      </div>
+
+      <h2 id="documentation">Documentation</h2>
+
+<!--    <p>The final documentation is a 40 minute long video tutorial for creating an automated character keeper in Google Sheets. Each step, function, and formula is thoroughly explained so that the user fully understands what they're doing and why, forming highly adaptable building blocks of knowledge and skill.</p>
     <p>Accompanying the video is a 1 page PDF of the rules for a game designed for use in the tutorial so that users can complete the project alongside the tutorial, a completed version of the project for users to examine and compare, and a 20 page reference document. The reference document contains a written version of the instructions, which are condensed but organised in the same sections as the video for ease of use. The instructions have formulas that can be copy-pasted so that the user doesn't have to type everything from the screen and audio. It also contains its own breakdowns of the functions and formulas used in the tutorial.</p>
-    <h3><a href="/portfolio/reference-and-training-materials/user-analysis.html">Report: User Analysis</a></h3>
-    <p>In the process of creating the documentation, I wrote this 2500 word report on primary qualitative user research, demonstrating my ability to cater content to specific audiences. I conducted a series of one-on-one interviews with members of the targeted community to get a sense of their needs, then synthesised the results into three unique user profiles and a documentation rationale.</p>
+    <a href="/portfolio/reference-and-training-materials/final-documentation.html">
+-->
+
+      <p>As explained in the <a href="../reference-and-training-materials/user-analysis.html#documentation-rationale">documentation rationale synthesised from my user research</a>, the intended audience prefers video content and learns best through hands-on experience. To meet both of those needs, I created a video tutorial that walks the user through the creation of a project, explaining every step along the way to ensure full understanding. The final documentation, entitled "Automation For Single Tab Character Keepers In Google Sheets", consists of four parts:</p>
+        <ol>
+            <li><a href="#video">A video tutorial</a></li>
+            <li><a href="#cheat-sheet">A cheat sheet</a></li>
+            <li><a href="#game-rules">A one page set of TTRPG rules</a></li>
+            <li><a href="#website">A website</a></li>
+        </ol>
+
+    <h4 id="video">The Video</h4>
+    <div class="row">
+      <div class="column left">
+        <div class="frame">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/l20AnrnBYW4?si=aC2iAn3Om9AfDZYe&amp;start=507&end=582" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="column right">
+        <p>My focus in this material is teaching basic, fundamental tools in a way that gives genuine understanding, forming skill building blocks that can be called on for the user's future projects. The video embedded to the left (or above on mobile) showcases an example section from 8:27 to 9:42.</p>
+        <p>User research showed that the intended audience is largely at a <a href="../reference-and-training-materials/user-analysis.html#coding-experience">novice level when it comes to coding</a>. While building automation in a spreadsheet isn't as complicated as programming software from scratch, it requires some similar technical skills. To help keep the audience engaged with material they may otherwise find intimidating, the tone of the video is humorous and positive, while still maintaining a high standard of instruction and explanation.</p>
+      </div>
+    </div> 
+
+    <h4 id="cheat-sheet">The Cheat Sheet</h4>
+    <div class="row">
+      <div class="column left">
+        <img src="../images/ref_final_cheatsheet1.png" class="center">
+        <img src="../images/ref_final_cheatsheet2.png" class="center">
+        <img src="../images/ref_final_cheatsheet3.png" class="center">
+      </div>
+
+      <div class="column right">
+        <p>This <a href="https://docs.google.com/document/d/1M8iI_UJX6kSnXaHyrjvtmH8rXzZGfo1-mY7rScV2HhM/edit?usp=sharing">20 page Google Doc</a> includes written instructions, formulas that can be copied to avoid the frustration of typing everything off of a screen, and in-depth explanations of how each formula used in the automation process works.</p>
+
+      </div>
+    </div>
+
+    <h4 id="game-rules">The Game Rules</h4>
+    <div class="row">
+      <div class="column left">
+        <a target="_blank" href="../images/ref_final_game.png">
+          <img id="myImg" src="../images/ref_final_game.png" class="thumbnail">
+        </a>
+      </div>
+
+      <div class="column right">
+        <p>This project is focused on building a digital play aid for a tabletop roleplaying game. At the beginning of the video, the user is directed to a website where they can download the rules of the game to use as a reference as they build the project alongside the instructor. This game was created specifically for the tutorial in order to showcase as many basic functions of automation as possible. Creating something that met that goal while being recognisable as a game so that the functions could be presented in the correct context for the audience was an incredible exercise in purpose and brevity.</p>
+      </div>
+    </div> 
+
+    <h4 id="website">The Website</h4>
+    <div class="row">
+      <div class="column left">
+        <img src="../images/ref_final_website.png" class="center">
+      </div>
+
+      <div class="column right">
+        <p>Using Carrd, I created a simple interactive mock-up of the site that could host these materials. The website also linked to <a href="https://docs.google.com/spreadsheets/d/17GJAEmfwZybNgGxI0zFGnb8mbu8kAaBrZZ4nc6uogxk/edit?usp=sharing">the final product created in the tutorial</a> for experimentation and direct comparison.</p>
+      </div>
+    </div> 
+
 </body>
 <footer><div id="footer"></div></footer>
 </html>

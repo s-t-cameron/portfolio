@@ -1,4 +1,6 @@
-/* MAIN */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* ----- MAIN & LAYOUT ----- */
 html
 {
     background-color:black;
@@ -6,25 +8,149 @@ html
 
 body
 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: gainsboro;
     border: solid 3px;
-    border-radius:50px;
+    border-radius: 0px 0px 50px  50px;
     margin:50px;
-    padding:50px;
+    padding:25px 50px 50px 50px;
 }
 
-footer
+/* --- NAVIGATION ---*/
+
+.topnav
 {
-    text-align:center;
-    background-color: #c6c6c6;
-    border-radius:50px;
-    padding:25px;
-    margin-left:10%;
-    margin-right:10%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    background-color: black;
+    list-style: none;
+    margin: 0px 0px 25px 0px;
+    border-radius:0px 0px 15px 15px;
 }
 
-/* TWO-COLUMN LAYOUT */
+.logo
+{
+    flex-wrap:wrap;
+    margin:10px;
+    padding:10px;
+}
+
+.nav-items
+{
+    flex-wrap:wrap;
+    margin:10px;
+    padding: 10px;
+}
+
+.topnav ul
+{
+    padding:0em;
+}
+
+.topnav a
+{
+    text-decoration:none;
+    display:block;
+    padding:1em;
+    color:#9e9e9e;
+    border: 3px solid rgb(26, 26, 26);
+    border-radius:15px;
+    margin: 5px;
+    font-size:20px;
+}
+
+.topnav p
+{
+    display:block;
+    padding:1em;
+    color:#9e9e9e;
+    border: 3px dashed rgb(26, 26, 26);
+    border-radius:15px;
+    margin: 5px;
+    font-size:20px;
+}
+
+.topnav a:hover
+{
+    border:3px solid black;
+}
+
+.dropdown .dropbtn {
+    text-decoration:none;
+    display:block;
+    padding:1em;
+    color:#9e9e9e;
+    text-decoration:none;
+    border: 3px solid rgb(26, 26, 26);
+    border-radius:15px;
+    font-size:inherit;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 5px;
+    font-size:20px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    border-radius:15px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border:3px solid black;
+  }
+
+@media all and (max-width: 800px) {
+    .topnav {
+      justify-content: space-around;
+    }
+  }
+  
+@media all and (max-width: 500px) {
+    .topnav {
+      flex-direction: column wrap;
+      padding: 0;
+    }
+    .topnav a { 
+        text-align: center; 
+        padding: 10px;
+      }
+    .topnav li:last-of-type a {
+        border-bottom: none;
+      }
+  }
+
+/* --- BACK TO TOP BUTTON --- */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 75px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: gainsboro;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 15px;
+    font-size: 13px;
+    text-transform:uppercase;
+    font-family:'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #topBtn:hover {
+    background-color: gainsboro;
+    color:black;
+  }
+
+/* --- TWO-COLUMN LAYOUT --- */
 *
 {
     box-sizing: border-box;
@@ -33,17 +159,19 @@ footer
 .column
 {
     float: left;
-    padding-left:25px;
-    padding-right:25px;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 .left
 {
     width: 50%;
+    padding-right:15px;
 }
 
 .right
 {
+    padding-left:15px;
     width: 50%;
 }
 
@@ -61,18 +189,19 @@ footer
     }
 }
 
-/* TWO-COLUMN LAYOUT: SMALL FIRST COLUMN */
+/* - SMALL FIRST COLUMN - */
 
 .leftsmall
 {
     width: 25%;
     padding-left:5em;
+    padding-right:5em
 }
 
 .rightsmall
 {
     width: 75%;
-    padding-right:5em;
+    padding-right:10em;
 }
 
 .row:after {
@@ -81,14 +210,15 @@ footer
     clear: both;
   }
 
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      padding:0em;
-    }
+  /* --- CENTER YOUTUBE EMBEDS --- */
+  .frame
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
-/* TEXT */
+/* ----- TEXT STYLES ----- */
 p
 {
     margin-top:0em;
@@ -101,8 +231,6 @@ p.portfolio
     border-left: solid 5px black;
     border-radius: 7px;
     overflow: hidden;
-    margin-left:5%;
-    margin-right:5%;
     padding: 15px 15px;
 }
 
@@ -111,6 +239,7 @@ p.note
     font-style:italic;
     text-indent:0;
     background-color: lightgrey;
+    border-left: solid 5px black;
     border-radius:7px;
     overflow: hidden;
     margin-left:5%;
@@ -131,7 +260,7 @@ p.ref
 }
 
 
-/* HEADINGS */
+/* ----- HEADINGS ----- */
 h1
 {
     font-size: 30px;
@@ -163,7 +292,7 @@ h5
     margin-bottom:.5em;
 }
 
-/* LINKS */
+/* ----- LINKS ----- */
 a
 {
     color:#8B008B;
@@ -179,13 +308,20 @@ a:visited
     color:#8B648B;
 }
 
-/* IMAGES */
+/* ----- IMAGES ----- */
 img.border
 {
+    border-top: 0px;
     border-left: solid 5px black;
     border-right: solid 5px black;
-    border-top: 0px;
     border-bottom: solid 7px black;
+    width:100%;
+    border-radius:50px;
+}
+
+img.noborder
+{
+    width:100%;
     border-radius:50px;
 }
 
@@ -194,7 +330,7 @@ img.center
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 100%;
     border-radius:15px;
     margin-bottom:1em;
 }
@@ -205,7 +341,7 @@ img.centersquare
     margin-left: auto;
     margin-right: auto;
     margin-bottom:1em;
-    width: 75%;
+    width: 100%;
 }
 
 img.thumbnail {
@@ -223,7 +359,7 @@ img.thumbnail:hover
     box-shadow: 0 0 2px 1px #7154A6;
 }
 
-/* TABLES */
+/* ----- TABLES ----- */
 table.report
 {
     border-collapse: collapse;
@@ -250,33 +386,4 @@ table.report tr:hover
 table.report th {
   text-align: center;
   background-color: #cfe2f3;
-}
-
-/* BACK TO TOP BUTTON */
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 15px;
-    font-size: 15px;
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
-
-  /* CENTER YOUTUBE EMBEDS */
-  .frame
-{
-    display: flex; 
-    justify-content: center;
-    align-items: center;
 }

@@ -4,7 +4,7 @@
     <title>Satah Cameron: Portfolio: Online Help</title>
     <link rel="stylesheet" href="main.css"/>
 
-    <!-- FOOTER SCRIPT -->
+    <!-- NAV SCRIPT -->
 <script
 src="https://code.jquery.com/jquery-3.3.1.js"
 integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -12,17 +12,18 @@ integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 </script>
 <script> 
 $(function(){
- $("#footer").load("/footer.html"); 
+ $("#footer").load("/footer.html");
+ $("#topnav").load("/header.html"); 
  });
 </script>
-<!-- END OF FOOTER SCRIPT -->
+<!-- END OF NAV SCRIPT -->
 </head>
-
+<header><div id="topnav"></div></header>
 <body>
         <!-- BUTTON SCRIPT -->
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        <button onclick="topFunction()" id="topBtn" title="Go to the top of the page">☖ TOP ☖</button>
         <script>
-        let mybutton = document.getElementById("myBtn");
+        let mybutton = document.getElementById("topBtn");
         
         window.onscroll = function() {scrollFunction()};
         
@@ -42,68 +43,70 @@ $(function(){
             <!-- END OF BUTTON SCRIPT -->
         
             <!-- PAGE CONTENT BEGINS -->
-    <h1>Online Help</h1>
-    <h2>Project Summary</h2>
-    <p>This documentation was created as a term project for COMM 1260: Design & Write Online Help, taken as part of the Technical Writing Certificate at the British Columbia Institute of Technology. The goal of the project was to use MadCap Flare to create a functioning help system with five fully-written, search engine optimized topics, supported by 15 "blank" topics and an organized table of contents.</p>
+    <h1>HTML5 Online Help</h1>
+    <p class="note">This documentation was created as a term project for COMM 1260: Design & Write Online Help, taken as part of the Technical Writing Certificate at the British Columbia Institute of Technology. The goal of the project was to use MadCap Flare to create a functioning help system with five fully-written, search engine optimized topics, supported by 15 "blank" topics and an organized table of contents.</p>
 
-    <h3>Documentation</h3>
-    <h4><a href="/portfolio/online-help/Content/Welcome.htm">The Welcome Page</a></h4>
+    <h2>Documentation Highlights</h2>
+    <p>While the entire help file is available to explore, many of the topics are just placeholders. This section goes over some of the finished content, linking directly to the pages when relevant.</p>
+    <h3><a href="/portfolio/online-help/Content/Welcome.htm">The Welcome Page</a></h3>
     <div class="row">
-        <div class="column leftsmall">
-            screenshots of the page aaaa
+        <div class="column left">
+            <img class="border" src="images/onlinehelp_welcome1.png">
+            <img class="border" src="images/onlinehelp_welcome2.gif">
         </div>
 
-        <div class="column rightsmall">
-            <p>The marketing of Ingress often blurs the line between reality and fiction, building intrigue around the lore. To stay consistent with the brand, the first impression of the site is partially "in-universe": it plays into the plot of the game while still delivering enough information to be helpful.</p>
-
-            <p>For further consistency, I established a colour pallette based on the app itself.</p>
-            <img class="center" src="images/onlinehelp_pallette.png" alt="A web application selecting colours from a screenshot of the game Ingress">
+        <div class="column right">
+            <p>The marketing of Ingress often blurs the line between reality and fiction. Its promotional material frequently leans into intrigue around the lore. For consistency with that branding, the first impression of the site is partially "in-universe"; it plays into that sense of mystery while still delivering enough information to be helpful.</p>
+            <p>For further brand alignment, the colour pallette for the help file is based on the app itself.</p>
+            <img class="border" src="images/onlinehelp_pallette.png" alt="A web application selecting colours from a screenshot of the game Ingress">
         </div>
       </div> 
 
-      <h4><a href="/portfolio/online-help/Content/Glyph%20hacking.htm">Glyph Hacking</a></h4>
+      <h3>SEO</h3>
       <div class="row">
-          <div class="column leftsmall">
-              screenshots of the page aaaa
+           <div class="column left">
+              <img class="border" src="images/onlinehelp_seo1.png" alt="A search for 'illuminator', returning 2 results, the top of which is the topic 'Fields'">
+              <img class="border" src="images/onlinehelp_seo3.png" alt="A search for 'translator' returning 4 results, the top of which is the topic 'How to Glyph Hack'">
+              <img class="border" src="images/onlinehelp_seo2.png" alt="A search for 'triangles' returning 2 results, the top of which is the topic 'Fields'">
+           </div>
+      
+          <div class="column right">
+              <p>Each topic has been carefully written to maximise the effectiveness of search. As an example, almost every in-game action earns progress toward a specific medal. The addition of metadata ensures that if a user searches for the name of a medal, the topic for the relevant in-game action appears first to allow them to learn more about it.</p>
+          </div>
+      </div> 
+
+      <h3><a href="/portfolio/online-help/Content/Portal%20Level.htm">Portal Level</a></h3>
+      <div class="row">
+          <div class="column left">
+              <img class="border" src="images/onlinehelp_portallevel.png" alt="A screenshot of the 'Portal Level' topic, linked above.">
+          </div>
+    
+          <div class="column right">
+              <p>This topic explains several concepts and sub-concepts, presenting the information in a logical progession and linking out to relevant topics when necessary.</p>
+          </div>
+       </div>
+
+      <h3><a href="/portfolio/online-help/Content/Glyph%20hacking.htm">Glyph Hacking</a></h3>
+      <div class="row">
+          <div class="column left">
+            <img class="border" src="images/onlinehelp_glyphhacking.gif" alt="An animated GIF of the 'Glyph Hacking' topic, showing an optional instruction being revealed and a thumbnail being clicked to expand and provide an additional visual.">
           </div>
   
-          <div class="column rightsmall">
-              <p>being good at writing instructions wow!</p>
+          <div class="column right">
+              <p>To avoid overwhelming new users with optional steps, this set of instructions uses drop-down text and expanding thumbnails to provide advanced information on demand.</p>
           </div>
         </div> 
-
-        <h4><a href="/portfolio/online-help/Content/Links.htm">Links</a></h4>
-        <div class="row">
-            <div class="column leftsmall">
-                screenshots of the page aaaa
-            </div>
-    
-            <div class="column rightsmall">
-                <p>being good at writing instructions wow!</p>
-            </div>
-          </div>
-
-          <h4><a href="/portfolio/online-help/Content/Portal%20Level.htm">Portal Level</a></h4>
-          <div class="row">
-              <div class="column leftsmall">
-                  screenshots of the page aaaa
-              </div>
-      
-              <div class="column rightsmall">
-                  <p>being good at writing instructions wow!</p>
-              </div>
-            </div> 
  
-            <h4><a href="/portfolio/online-help/Content/Medal%20Types.htm">Types of Medals</a></h4>
-            <div class="row">
-                <div class="column leftsmall">
-                    screenshots of the page aaaa
-                </div>
+        <h3><a href="/portfolio/online-help/Content/Medal%20Types.htm">Types of Medals</a></h3>
+        <div class="row">
+            <div class="column left">
+                <img class="border" src="images/onlinehelp_typesofmedals.png" alt="A screenshot of the 'Types of Medals' topic, showing the introduction paragraph and some of the table.">
+            </div>
         
-                <div class="column rightsmall">
-                    <p>being good at writing instructions wow!</p>
-                </div>
-              </div> 
+            <div class="column right">
+                <p>This reference topic contains a table with information on every achievement (or "medal") in the game, linking out to topics that give further information.</p>
+            </div>
+        </div> 
     
 </body>
 <footer><div id="footer"></div></footer>

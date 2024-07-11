@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Satah Cameron: Technical Writing Portfolio</title>
+    <title>Satah Cameron: Portfolio</title>
     <link rel="stylesheet" href="main.css"/>
-</head>
-
-<body>
-    <h1 class="center">Satah Cameron</h1>
+    <!-- NAV SCRIPT -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+     crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+     $("#footer").load("/footer.html");
+     $("#topnav").load("/header.html"); 
+     });
+    </script>
+    <!-- END OF NAV SCRIPT -->
+    </head>
+    <header><div id="topnav"></div></header>
+    <body>
+            <!-- BUTTON SCRIPT -->
+            <button onclick="topFunction()" id="topBtn" title="Go to the top of the page">☖ TOP ☖</button>
+            <script>
+            let mybutton = document.getElementById("topBtn");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+                <!-- END OF BUTTON SCRIPT -->
+            
+                <!-- PAGE CONTENT BEGINS -->
     <div class="row">
         <div class="column leftsmall">
             <img class="border" src="images/satah1.jpg" alt="A white person with long brown hair in a braid, winged eyeliner, and black lipstick, wearing a black hat with an alien on it and a black sweater reading 'FEMME FATALE'" width=100%>
         </div>
         <div class="column rightsmall">
-            <p>A technical communicator, substantive editor, and </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+            <p>I'm an Ottawa-based technical communicator and developmental/substantive editor. I discovered and honed my immense passion for effective communication through a combination of administrative work and freelancing in the tabletop roleplaying games industry.</p></div>
         </div>
         </div>
       </div>
 
-    <h2 class="center">Portfolio</h2>
-    <h3 class="center">Technical Communication</h3>
+    <h2 class="center">Featured Documentation</h2>
     <div class="row">
         <div class="column left">
-            <h4 class="center"><a href="online-help.html">Online Help (with MadCap Flare)</a></h4>
-            <p class="portfolio">description goes here</p>
+            <h3 class="center">HTML5 Online Help<br>
+              <a href="online-help.html">Ingress Help File</a></h3>
+            <p class="portfolio">An HTML5 help file for an augmented reality mobile game, created in accordance with pre-established branding in aesthetic and tone.
+              <br><br><b>Tools used:</b> MadCap Flare, CSS, HTML5, Adobe Photoshop</p>
             <img class="center" src="images/screencap_help1.png">
             <img class="center" src="images/screencap_help2.png">
         </div>
 
         <div class="column right">
-            <h4 class="center"><a href="reference-and-training-materials.html">Reference and Training Materials</a></h4>
-            <p class="portfolio">description goes here</p>
+            <h3 class="center">Reference and Training Materials<br>
+              <a href="reference-and-training-materials.html">Automation For Single Tab Character Keepers</a></h3>
+            <p class="portfolio">A 40 minute instructional video and accompanying written reference material presenting a technical topic to a non-technical audience.
+              <br><br>
+              <b>Tools used:</b> Google Docs, Google Sheets, data automation, DaVinci Resolve</p>
             <img class="center" src="images/screencap_tutorial1.png">
             <img class="center" src="images/screencap_tutorial2.png">
         </div>
       </div>
 
-      <div class="row">
-        <div class="column left">
-            <h3 class="center">Editing</h3>
-            <p class="portfolio">I Have the High Ground, 2023 IPR Best Seller</p>
-            <p class="portfolio">going rogue 2e, 2023 CRIT Award Winner for Best GMless Game</p>
-            <p class="portfolio">Likeness Machines</p>
-        </div>
-
-        <div class="column right">
-            <h3 class="center">Writing and Design</h3>
-            <p class="portfolio">hook line & cyb3r</p>
-            <img class="center" src="images/hlc_phillygameshop.jpg" alt="hook line & cyb3r on an indie TTRPG shelf in a game store.">
-            <p class="portfolio">Zine-o-Map vs Mini-Adventure, 224% funded on crowdfundr</p>
-            <p class="portfolio">fgdfgdfgdfgdfg</p>
-        </div>
-      </div> 
+      <h3 class="center"><a href="editing.html">Editing Credits and Testimonials</a></h3>
 
 </body>
 
