@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Satah Cameron: Portfolio: TTRPGs</title>
+    <link rel="stylesheet" href="main.css"/>
+
+    <!-- NAV SCRIPT -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+     crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#topnav").load("/portfolio/header.html"); 
+     });
+    </script>
+    <!-- END OF NAV SCRIPT -->
+    </head>
+    <header><div id="topnav"></div></header>
+    <body>
+            <!-- BUTTON SCRIPT -->
+            <button onclick="topFunction()" id="topBtn" title="Go to the top of the page">☖ TOP ☖</button>
+            <script>
+            let mybutton = document.getElementById("topBtn");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+                <!-- END OF BUTTON SCRIPT -->
+
+    <h1>TTRPG Writing, Design, Editing, and Consultation</h1>
+    <p>As a game designer and writer, I specialise in genre fiction, character creation, and creating depth in condensed formats. I'm particularly adept at crafting tables that hit the very delicate balance of specific and open that makes them the most inspiring and useful as a tool.</p>
+    <p>Editing and consultation are the perfect opportunity to further channel my obsession with TTRPG mechanics and game philosophy into productive conversations. I enjoy working closely with designers to narrow in on what they're trying to do and say with the rules of their game, developing a thorough understanding of their intentions and helping them make sure those intentions are conveyed. I work flexibly at the micro and the macro level, able both to dig in deep and to look at the bigger picture, ensuring that every aspect of the work is clear.</p>
+    <div class="row">
+        <div class="column left">
+            <h3>Published Games</h3>
+            <p class="portfolio"><a class="title" href="https://satah.itch.io/hooklineandcyber">hook line & cyb3r</a>, a pick-up-and-play one shot that uses the rules of Go Fish to develop a series of cyberpunk heists</p>
+            <p class="portfolio"><a href="https://satah.itch.io/slender-threads-of-freqs-and-fortune">slender threads of freqs and fortune</a>, a one page paper fortune teller game of scraped data and taking decisive action on limited information</p>
+            <h3>Contributing Writer</h3>
+            <p class="portfolio">Adventure design and writing for <a class="title" href="https://adavidpglass.itch.io/zvm-zine-o-map-vs-mini-adventure">Zine-o-Map vs Mini-Adventure</a>, 224% funded on crowdfundr during Zine Month 2023</p>
+            <p class="portfolio">Adventure design and writing for <a class="title" href="https://www.kickstarter.com/projects/eryksawicki/milk-bar-sci-fi-osr-roleplaying-in-post-communist-poland">Milk Bar</a> (forthcoming)</p>
+            <h3>Editing and Design Consultation</h3>
+            <p class="portfolio">Design consultant for <a class="title" href="https://jumpgategames.itch.io/going-rogue">going rogue 2e</a>, 2023 CRIT Award Winner for Best GMless Game</p>
+            <p class="portfolio">Substantive editor, design consultant, and writer on <a class="title" href="https://jumpgategames.itch.io/the-scum-and-villains-expansion">the scum & villains expansion</a></p>
+            <p class="portfolio">Design consultant on <a class="title" href="https://jumpgategames.itch.io/ihthg">I Have the High Ground</a>, 2022 & 2023 IPR Best Seller with over 700 copies sold</p>
+            <p class="portfolio">Developmental and substantive editor and design consultant on <a class="title" href="https://jumpgategames.itch.io/planetfist">PLANET FIST</a>, winner of the SUBSTANCE award in the FIST: Ultra Jam</p>
+            <p class="portfolio">Substantive and line editor for <a class="title" href="https://pearseanderson.itch.io/likeness">Likeness Machines</a></p>
+        </div>
+        <div class="column right">
+            <h3>Testimonials</h3>
+            <p class="portfolio"><b>Jess Levine of <a href="https://jumpgategames.itch.io/">Jumpgate Games</a>:</b> Satah has design consulted on I Have the High Ground, going rogue 2e, and PLANET FIST. If you liked any them: they wouldn't have been ANYWHERE near as good without Satah's work. Did you think the IHtHG "Descriptor" mechanic for making PCs foils of each other was clever? Satah. Did you like the idea of THE BOND pillar in going rogue 2e, representing a relationship as a setting element? Satah. Do you find PLANET FIST item rules elegantly concise? Satah.</p>
+            <p class="portfolio"><b>Pearse Anderson, creator of <a class="title" href="https://pearseanderson.itch.io/likeness">Likeness Machines</a>:</b> I needed to release the project on a tight timeline — who knew when the strike would end — and the one editor who jumped in to help on that timeline was Satah. I finished the rules for this TTRPG (Likeness Machines) and passed them to Satah without ever playtesting the game, naming it, or feeling 100% about it. That didn't stop Satah, who turned around edits under schedule with tons of suggestions. Dense, marked-up Google Doc. Love it. Working with Satah, we were able to blend Old Hollywood anachronisms with dystopic AI satires and still keep it all on one page. I was still learning the terms of my own mechanics (Crises, Stress, Reversed Major Arcana, etc.) and they helped flatten that while keeping the tone. Thanks to their quick work and many late nights designing and re-designing Likeness Machines' layout, I was able to release the game 3 days after their edits, after only 2 playtests! It's been passed out on Hollywood lots, Chicago strikelines, and over Twitch streams.</p>
+            <p class="portfolio"><b>Jess Levine, when reviewers of <a class="title" href="https://jumpgategames.itch.io/ihthg">I Have the High Ground</a> and <a class="title" href="https://jumpgategames.itch.io/going-rogue">going rogue 2e</a> noted her impeccable inclusion of tips & advice to players:</b> I want to note that having Satah as a design consultant on both helps drives this—Satah is GREAT at identifying player pain points & challenging me to write notes that help players navigate the game-as-played. I am very proud to have widely applicable tips, examples, and designer's notes labeled as my “calling card” because I believe they're vital to player experience & I'm proud of how I write them, but it's been so crucial how Satah's critical eye has repeatedly prompted me to do so.</p>
+        </div>
+    </div>
+</body>
+</html>
